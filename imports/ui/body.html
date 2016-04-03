@@ -1,0 +1,30 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Todo List</h1>
+      <h2>Want 1st task input DIV to show with focus and then fadeOut and FadeIn the second category input DIV on submit. This process should repeat itself and focus should transfer from each input on submit</h2>
+      <form class="new-task">
+        <input type="text" name="text" placeholder="Type to add new tasks" autofocus />
+      </form>
+      <form class="category">
+        <input type="text" name="ctext" placeholder="Category tag - should be hidden until task input answered/submitted" />
+      </form>
+    </header>
+ 
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="container">
+    <hr>
+    <h2> Categories </h2>
+    <ul>
+    {{#each categories}}
+      <li>{{text}}</li>
+    {{/each}}
+    </ul>
+  </div>
+</body>
+ 
