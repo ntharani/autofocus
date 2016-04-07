@@ -48,7 +48,7 @@ form {
   position: relative;
 }
 
-.new-task input {
+.new-task  {
   box-sizing: border-box;
   padding: 10px 0;
   background: transparent;
@@ -58,7 +58,7 @@ form {
   font-size: 1em;
 }
 
-.category input {
+.category {
   opacity: 1;
   background-color: #9744D6;
   color: #FFF;
